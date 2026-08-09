@@ -83,5 +83,5 @@ Copy-Item (Join-Path $BuildDirectory "*") `
 
 Write-Host ""
 Write-Host "Build succeeded."
-Write-Host "Executable: $BuildDirectory\hello.com"
-Write-Host "Deployment: $DeployDirectory\hello.com"
+# Write-Host "Executable: $BuildDirectory\hello.com"
+# Write-Host "Deployment: $DeployDirectory\hello.com"
