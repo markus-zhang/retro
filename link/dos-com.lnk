@@ -1,0 +1,8 @@
+format dos com
+
+debug all
+option symfile
+option map
+
+name build\hello.com
+file build\dos-com.obj

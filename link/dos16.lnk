@@ -1,0 +1,6 @@
+format dos
+debug all
+option map
+option symfile
+name build\dos16.exe
+file build\dos16.obj
