@@ -1,37 +1,29 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Build retro target",
-      "type": "shell",
-      "command": "powershell.exe",
-      "args": [
-        "-NoProfile",
-        "-ExecutionPolicy",
-        "Bypass",
-        "-File",
-        "${workspaceFolder}\\scripts\\build.ps1",
-        "${input:retroTarget}"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": []
-    }
-  ],
-  "inputs": [
-    {
-      "id": "retroTarget",
-      "type": "pickString",
-      "description": "Target platform",
-      "options": [
-        "dos-com",
-        "dos16",
-        "win16",
-        "win32"
-      ],
-      "default": "dos16"
-    }
-  ]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build active ASM",
+            "type": "process",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}/scripts/build.ps1",
+                "-SourceFile",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": []
+        }
+    ]
 }

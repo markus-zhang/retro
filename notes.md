@@ -36,3 +36,4 @@
 
 - FFFF:0000 contains a JMP instruction for IBM PC and clones. When the PC boots, it starts in real mode and executes the instruction at FFFF:0000. If press G, the PC cold boots, because this is how the PC is brought up from a cold boot.
 
+6. To read a file, use INT 21H + 3FH, looks like it requires a file handler, so there must be something other routine that opens a file and returns a file handler, like in Unix. Yeah that's function 3DH.

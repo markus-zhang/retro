@@ -32,7 +32,7 @@ This repo contains all of my experiments with MS-DOS assembly programming.
 
     - CD-ROM controller: Panasonic/MKE CD-ROM interface (I don't think this works on a 80286, so please ignore this one)
 
-    - Hard disk controllers: PC/AY IDE Controller
+    - Hard disk controllers: PC/AT IDE Controller
 
 - Hard disks: 10MB (C: 306, H:4, S:17, Model:3500RPM)
 
@@ -52,7 +52,7 @@ I was a little worried about the space it may take, but apparently it was in 198
 
 ### Host Dev Env
 
-Windows 10 + VSCode + NASM Code Lens (for intellisense) + Hex Editor (for checking binary)
+Windows 10 (Should use Linux, but well, too lazy to go into my VMWare box) + VSCode + NASM Code Lens (for intellisense) + Hex Editor (for checking binary)
 
 For image transfer I use WinImage. It is a paid application but does offer 30-day of free trial. The idea is to create a new image within 86box, and use Winimage to write into the image. I can then mount the image as a 360KB diskette. Note that you need to close Winimage to mount successfully.
 
